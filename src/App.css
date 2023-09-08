@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+/* src/components/HeroSection.js */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-container {
+  background-color: black;
+  padding: 20px; /* Adjust the padding as needed */
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px; /* Adjust the logo size */
+}
+
+.nav-buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.nav-link {
   color: white;
+  text-decoration: none;
+  margin: 0 10px; /* Add spacing between navigation links */
 }
 
-.App-link {
-  color: #61dafb;
+.contact-button {
+  background-color: black; /* Set the background color to black */
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px; /* Adjust button padding */
+  border-radius: 5px; /* Add rounded corners to the button */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* src/components/IntroSection.js */
+
+.intro-container {
+  background-color: black;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
 }
+
+.intro-text {
+  color: white;
+  font-size: 20px;
+  line-height: 1.2; /* Adjust line height for spacing */
+  flex: 1; /* Allow text to grow and take available space */
+}
+
+.intro-message {
+  margin-bottom: 10px; /* Add spacing between lines */
+}
+
+.studio-description {
+  white-space: pre-line; /* Preserve line breaks */
+}
+
+.email-input-container {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  border-radius: 10px; /* Rounded edges for text field and button */
+  padding: 5px; /* Adjust padding as needed */
+  margin-top: 10px; /* Add spacing between text and input */
+}
+
+.email-input {
+  width: 200px;
+  background-color:black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px; /* Rounded edges for text field */
+  outline: none; /* Remove default input outline */
+}
+
+.lets-talk-button {
+  color: black;
+  background-color: yellow; /* Mustard yellow background color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px; /* Rounded edges for button */
+  cursor: pointer;
+  margin-left: -1px; /* Adjust for button position inside the input field */
+}
+
+
+
